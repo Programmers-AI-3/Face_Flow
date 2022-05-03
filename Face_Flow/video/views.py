@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import UploadFileForm
 from django.views.decorators.csrf import ensure_csrf_cookie
+import os
 
 
 @ensure_csrf_cookie
@@ -11,6 +12,10 @@ def upload_display_video(request):
             file = request.FILES['file']
 
             handle_uploaded_file(file)
+
+            cmd = f"python ../../yolov3/detect.py --weights ../../0502_epoch_100.pt --source {file.name}"
+            _ = os.system(cmd)
+
             return render(request, "index.html", {'filename': file.name})
     else:
         form = UploadFileForm()

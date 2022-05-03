@@ -17,9 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from video.views import upload_display_video
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', upload_display_video),
+	path('', include('video.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

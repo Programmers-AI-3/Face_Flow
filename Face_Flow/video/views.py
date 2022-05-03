@@ -13,7 +13,7 @@ def upload_display_video(request):
 
             handle_uploaded_file(file)
 
-            cmd = f"python ../../yolov3/detect.py --weights ../../0502_epoch_100.pt --source {file.name}"
+            cmd = f"python ../../../yolov3/detect.py --source {file.name}"
             _ = os.system(cmd)
 
             return render(request, "index.html", {'filename': file.name})

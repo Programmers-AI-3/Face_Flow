@@ -13,6 +13,10 @@
    <a href="https://youtube.com/">
    <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-youtube.png" width="2%"/>
    </a>
+   <img width="2%" />
+   <a href="https://youtube.com/">
+   <img src="https://user-images.githubusercontent.com/20294786/166430750-e6dea8b4-460f-4813-9a91-5495b628ba40.png" width="2%"/>
+   </a>
 </div>
 
 <br>

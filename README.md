@@ -59,15 +59,14 @@ $ python manage.py runserver
 <details open>
 <summary>Training</summary>
 
-<img width="800" src="https://user-images.githubusercontent.com/20294786/166427238-f566e3d5-d42d-42e9-9ce5-e81b326bce44.png">
+<img width="800" src="https://user-images.githubusercontent.com/20294786/166643920-22900588-9e5d-47ea-85eb-519d0363b55e.png">
 
-<img width="800" src="https://user-images.githubusercontent.com/20294786/166427251-54b66fd3-48b8-4e5b-a455-848e75b9b3af.png">
+<img width="800" src="https://user-images.githubusercontent.com/20294786/166643925-9a2cf04a-e249-4e45-89cd-053738821071.png">
 
 </details>
 
 ## <div align="center">Environments</div>
-
-Get started in seconds with our verified environments. Click each icon below for details.
+개발 환경 -> 추후 이미지로 대체
 
 <div align="center">
     <a href="https://colab.research.google.com/github/ultralytics/yolov3/blob/master/tutorial.ipynb">

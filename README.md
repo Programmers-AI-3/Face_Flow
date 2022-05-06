@@ -61,8 +61,19 @@ $ python manage.py runserver
 <details open>
 <summary>Training Results</summary>
 
+- Confusion matrix
+<img width="800" src="https://user-images.githubusercontent.com/93199081/166864110-61bc406f-1516-47b2-b8d2-3114a5d80669.png">
+
+- Metrics
+<img width="800" src="https://user-images.githubusercontent.com/93199081/166864147-6ea85c7f-7c42-43d6-bba5-381fcf3100b7.png">
+
 - Inference Time
 <img width="800" src="https://user-images.githubusercontent.com/93199081/166864310-cab614a0-7dd3-42af-a4c8-783e79f10de4.jpg">
+
+- mAP comparison
+<img width="800" src="https://user-images.githubusercontent.com/93199081/166864377-90f7fc13-a08d-451f-a22f-11aef40526b8.jpg">
+
+</details>
 
 ## <div align="center">Environments</div>
 <div align="center">

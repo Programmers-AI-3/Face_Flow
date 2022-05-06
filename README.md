@@ -14,7 +14,7 @@
    <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-youtube.png" width="10%"/>
    </a>
    <img width="2%" />
-   <a href="https://drive.google.com/drive/folders/1qS2HrBo6gdMuZDhSXFjin60wO4Tz7Q04?usp=sharing">
+   <a href="https://drive.google.com/drive/folders/1-6pJ0ffOLqMQtK0EmWnkKxp107rAVFrR?usp=sharing">
    <img src="https://user-images.githubusercontent.com/20294786/166430750-e6dea8b4-460f-4813-9a91-5495b628ba40.png" width="8%"/>
    </a>
 </div>
@@ -39,10 +39,9 @@ installed including
 <!-- $ sudo apt update && apt install -y libgl1-mesa-glx libsm6 libxext6 libxrender-dev -->
 
 ```bash
-$ git clone https://github.com/Programmers-AI-3/Face_Flow
+$ git clone https://github.com/Programmers-AI-3/Face_Flow --recurse-submodules 
 $ pip install -r requirements.txt
-$ cd yolov3
-$ cd ../Face_Flow
+$ cd Face_Flow
 ```
 
 </details>

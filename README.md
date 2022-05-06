@@ -21,7 +21,7 @@
 
 <br>
 <p>
-카메라 감독이 일일이 수백명의 방청객(청중)을 바라보며 감정을 분석하고 실시간으로 상황에 맞는 감정을 파악해서 zoom in, zoom out을 해야 하기 때문에 번거로울 것으로 생각을 하였고, 카메라 감독을 보조할 수 있는 AI 카메라 시스템을 구축하는 것이 목표입니다.
+카메라 감독이 일일이 수백명의 방청객(청중)을 바라보며 감정을 분석하고 실시간으로 상황에 맞는 감정을 파악해서 카메라 감독을 보조할 수 있는 AI 카메라 시스템을 구축하는 것이 목표입니다.
 
 </p>
 
@@ -61,8 +61,19 @@ $ python manage.py runserver
 <details open>
 <summary>Training Results</summary>
 
+- Confusion matrix
+<img width="800" src="https://user-images.githubusercontent.com/93199081/166864110-61bc406f-1516-47b2-b8d2-3114a5d80669.png">
+
+- Metrics
+<img width="800" src="https://user-images.githubusercontent.com/93199081/166864147-6ea85c7f-7c42-43d6-bba5-381fcf3100b7.png">
+
 - Inference Time
 <img width="800" src="https://user-images.githubusercontent.com/93199081/166864310-cab614a0-7dd3-42af-a4c8-783e79f10de4.jpg">
+
+- mAP comparison
+<img width="800" src="https://user-images.githubusercontent.com/93199081/166864377-90f7fc13-a08d-451f-a22f-11aef40526b8.jpg">
+
+</details>
 
 ## <div align="center">Environments</div>
 <div align="center">

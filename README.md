@@ -24,6 +24,7 @@
 카메라 감독이 일일이 수백명의 방청객(청중)을 바라보며 감정을 분석하고 실시간으로 상황에 맞는 감정을 파악해서 카메라 감독을 보조할 수 있는 AI 카메라 시스템을 구축하는 것이 목표입니다.
 </p>
 </div>
+<br>
 
 
 ## <div align="center">Datasets and Models</div>
@@ -31,7 +32,7 @@
    <p>
 모델 학습에 사용된 데이터셋과 모델 파일은 상단 아이콘을 통해 다운로드 가능합니다. 
 제공된 데이터셋과 모델 파일은 모델 학습 및 추론에 사용가능합니다. <br>
-(활용한 데이터셋 : AIHub에서 제공되는 한국인 감정 데이터, widerface 데이터)
+(활용 데이터셋 : AIHub 한국인 감정 데이터, widerface 데이터)
    </p>
 </div>
 
@@ -48,7 +49,7 @@
 ## <div align="center">Quick Start Examples</div>
 
 <details open>
-<summary>Install</summary>
+   <summary><b>Install</b></summary>
 
 [**Python>=3.6.0**](https://www.python.org/) is required with all
 [requirements.txt](https://github.com/ultralytics/yolov3/blob/master/requirements.txt)   
@@ -64,8 +65,8 @@ $ cd Face_Flow
 </details>
 
 <details open>
-<summary>Prerequisites</summary>
-모델 테스트 시 공유폴더에 저장된 .pt 모델 파일을 사용자 로컬에 다운받아 놓아야 한다. 아래 3가지 파일 중 선택하여 다운로드 할 수 있다.
+<summary><b>Prerequisites</b></summary>
+모델 테스트 시 공유폴더에 저장된 모델 파일을 로컬에 다운받아 놓아야 한다. 아래 3가지 파일 중 선택하여 다운로드 할 수 있다.
    <ul>
       <li>AIHub.pt : AIHub 데이터로만 학습한 모델</li>
       <li>AIHub_widerface.pt : AIHub 데이터와 widerface 데이터로 학습한 모델</li>
@@ -78,18 +79,30 @@ $ mv {다운받은 .pt 파일} {프로젝트 경로}/Face_Flow/
 </details>
 
 <details open>
-<summary>Inference</summary>
+<summary><b>Inference</b></summary>
 django 프로젝트를 실행시켜 서버를 동작시키고  
 비디오를 업로드하여 사전에 학습된 모델을 통해서 추론된 동영상을 다운로드 할 수 있다.
 
 ```bash
 $ python manage.py runserver
 ```
+</details>
+
 ## <div align="center">Why Face Flow?</div>
+
+<details open>
+<summary><b>Sample outputs</b></summary>
+   
+- Class 1: Happy
+<img width="400" src="https://user-images.githubusercontent.com/4311289/167237734-93f0248d-666b-4d13-8046-7acc2dabd4f0.png">
+   
+- Class 3: Neutral
+<img width="400" src="https://user-images.githubusercontent.com/4311289/167237741-eedb0bf9-3b4c-4de3-b7c9-8c51b7594751.png">
+
 </details>
 
 <details open>
-<summary>Training Results</summary>
+<summary><b>Training Results</b></summary>
    
 - Confusion matrix
 <img width="800" src="https://user-images.githubusercontent.com/93199081/166864110-61bc406f-1516-47b2-b8d2-3114a5d80669.png">
@@ -113,14 +126,22 @@ $ python manage.py runserver
 
 
 
-## <div align="center">References</div>
-<div align="center">
-   1. datasets
-   widerface : http://shuoyang1213.me/WIDERFACE/
-   AIHub 
-   2. code
-widerface label converter : https://github.com/zlmo/Face-Detection
-ultralytics yolov3 : https://github.com/ultralytics/yolov3
+## <div align="center">Reference</div>
+<div>
+   <ul>
+      <li>datasets
+         <ul>
+            <li>widerface : http://shuoyang1213.me/WIDERFACE/</li>
+            <li>AIHub : https://aihub.or.kr/aidata/27716</li>
+         </ul>
+      </li>
+      <li>code
+         <ul>
+            <li>widerface label converter : https://github.com/zlmo/Face-Detection</li>
+            <li>ultralytics yolov3 : https://github.com/ultralytics/yolov3</li>
+         </ul>
+      </li>
+   </ul>
 </div>
 
 

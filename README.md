@@ -22,10 +22,28 @@
 <br>
 <p>
 카메라 감독이 일일이 수백명의 방청객(청중)을 바라보며 감정을 분석하고 실시간으로 상황에 맞는 감정을 파악해서 카메라 감독을 보조할 수 있는 AI 카메라 시스템을 구축하는 것이 목표입니다.
-
 </p>
-
 </div>
+
+
+## <div align="center">Datasets and Models</div>
+<div>
+   <p>
+모델 학습에 사용된 데이터셋과 모델 파일은 상단 아이콘을 통해 다운로드 가능합니다. 
+제공된 데이터셋과 모델 파일은 모델 학습 및 추론에 사용가능합니다. <br>
+(활용한 데이터셋 : AIHub에서 제공되는 한국인 감정 데이터, widerface 데이터)
+   </p>
+</div>
+
+    datasets/
+        AIHub/
+        widerface/
+        AIHub_widerface/
+    models/
+        AIHub.pt
+        AIHub_widerface.pt
+        AIHub_widerface_tuning.pt
+
 
 ## <div align="center">Quick Start Examples</div>
 
@@ -43,7 +61,20 @@ $ git clone https://github.com/Programmers-AI-3/Face_Flow --recurse-submodules
 $ pip install -r requirements.txt
 $ cd Face_Flow
 ```
+</details>
 
+<details open>
+<summary>Prerequisites</summary>
+모델 테스트 시 공유폴더에 저장된 .pt 모델 파일을 사용자 로컬에 다운받아 놓아야 한다. 아래 3가지 파일 중 선택하여 다운로드 할 수 있다.
+   <ul>
+      <li>AIHub.pt : AIHub 데이터로만 학습한 모델</li>
+      <li>AIHub_widerface.pt : AIHub 데이터와 widerface 데이터로 학습한 모델</li>
+      <li>AIHub_widerface_tuning.pt : AIHub 데이터와 widerface 데이터로 학습하고 하이퍼파라미터 튜닝을 한 모델로 가장 정확도가 높음.</li>
+   </ul>
+   
+```bash
+$ mv {다운받은 .pt 파일} {프로젝트 경로}/Face_Flow/
+```
 </details>
 
 <details open>
@@ -59,7 +90,7 @@ $ python manage.py runserver
 
 <details open>
 <summary>Training Results</summary>
-
+   
 - Confusion matrix
 <img width="800" src="https://user-images.githubusercontent.com/93199081/166864110-61bc406f-1516-47b2-b8d2-3114a5d80669.png">
 
@@ -79,3 +110,17 @@ $ python manage.py runserver
     <img src="https://user-images.githubusercontent.com/93199081/166865453-5589da37-851b-4549-9e23-5f14157c8663.jpg" width="100%"/>
 
 </div>
+
+
+
+## <div align="center">References</div>
+<div align="center">
+   1. datasets
+   widerface : http://shuoyang1213.me/WIDERFACE/
+   AIHub 
+   2. code
+widerface label converter : https://github.com/zlmo/Face-Detection
+ultralytics yolov3 : https://github.com/ultralytics/yolov3
+</div>
+
+

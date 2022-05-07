@@ -88,6 +88,15 @@ $ python manage.py runserver
 ```
 </details>
 
+
+<details open>
+<summary><b>Web Tutorials</b></summary>
+   
+- [Face Flow WIKI](https://github.com/Programmers-AI-3/Face_Flow/wiki)
+   
+</details>
+
+
 ## <div align="center">Why Face Flow?</div>
 
 <details open>
@@ -117,6 +126,7 @@ $ python manage.py runserver
 <img width="800" src="https://user-images.githubusercontent.com/93199081/166864377-90f7fc13-a08d-451f-a22f-11aef40526b8.jpg">
 
 </details>
+
 
 ## <div align="center">Environments</div>
 <div align="center">

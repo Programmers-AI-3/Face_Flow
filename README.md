@@ -10,7 +10,7 @@
 <br>
 <div align="center">
    <img width="%" />
-   <a href="https://youtube.com/">
+   <a href="https://youtu.be/YYRLcmTpfbM">
    <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-youtube.png" width="10%"/>
    </a>
    <img width="2%" />
